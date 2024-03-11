@@ -1,0 +1,150 @@
+:root {
+    /* Mode 1 */
+    /* colors */
+    --color-oferta-curso: #f70b0b;
+    --color-basic-text: #000000;
+    --color-contador-atras: #771414;
+    --color-fondo: #c1e1eb;
+    --color-formulario: #78ac7be3;
+    --color-ico-formulario: #e1e083;
+    --titulo-pagina: #000af6;
+}
+body{
+    background-color: var(--color-fondo);
+    
+    
+}
+section.landingPage{
+    
+    display: flex;
+    justify-content: center;
+    & article.gridLandingPage{
+        
+        width:min(100%,1200px);
+        height: 600px;
+     
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(8, 1fr);
+        /* gap: Sepracion(tamaño de espacio entre ellas) entre celdas */
+        gap: 5px;
+
+    }
+
+    .titulo{
+        color: var(--titulo-pagina);
+        grid-column: 6/9;
+        padding: 8px;
+    }
+    .logo{
+        grid-column: 5/5;
+        height: 70px;
+    }
+    .cursoFigma{
+        grid-column: 1/3;
+        grid-row: 2/4;
+        width: 246px;
+    }
+    .tituloFigma{
+        color: var(--titulo-pagina);
+        grid-column: 4/7;
+        grid-row:  2/3; ;
+    }
+    .textTiFigma{
+        grid-column: 4/9;
+        grid-row:  3/4; ;
+    }
+    .descuento{
+       
+        grid-column: 11/12;
+        grid-row: 2/3;
+        width: 90px;
+        height: 85px;
+    }
+    .oferta1{
+        color: var(--color-oferta-curso);
+        grid-column: 10/13;
+        grid-row: 3/4;
+        text-align: center;
+        
+    }
+    .mensaje{
+        color: var(--color-oferta-curso);
+        grid-column: 10/13;
+        grid-row: 4/5;
+        text-align: center;
+    }
+    .precio{
+        grid-column: 11/12;
+        grid-row: 5/6;
+        width: 90px;
+        
+    }
+    .concepto1{
+        color: var(--titulo-pagina);
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+    .miniconcepto1{
+        grid-column: 1/4;
+        grid-row: 5/6;
+    }
+    .concepto2{
+        color: var(--titulo-pagina);
+        grid-column: 4/7;
+        grid-row: 4/5;
+    }
+    .miniconcepto2{
+        grid-column: 4/7;
+        grid-row: 5/6;
+    }
+    .concepto3{
+        color: var(--titulo-pagina);
+        grid-column: 7/10;
+        grid-row: 4/5;
+    }
+    .miniconcepto3{
+        grid-column: 7/10;
+        grid-row: 5/6;
+    }
+    .textDuraciCurso{
+        color: var(--titulo-pagina);
+        grid-column: 10/13;
+        grid-row: 6/7;
+        text-align: center;
+
+    }
+    .imgduraciCurso{
+        grid-column: 11/12;
+        grid-row: 7/8;
+        width: 90px;
+        height: 100px;
+    }
+    .alumnossati{
+        grid-column: 11/13;
+        grid-row: 8/9;
+    }
+    .tituCursoOnli{
+        color: var(--titulo-pagina);
+        grid-column: 7/9;
+        grid-row: 6/7;
+        text-align: center;
+    }
+    .imgCursoOnli{
+        grid-column: 7/9;
+        grid-row: 7/8;
+        width: 110px;
+        justify-self: center; 
+        align-self: center;
+    }
+    .textCursoOnli{
+        grid-column: 7/10;
+        grid-row: 8/9;
+    }
+    .tituFormu{
+        color: var(--titulo-pagina);
+        grid-column: 1/4;
+        grid-row: 6/7;
+        text-align: center;
+    }
+}
